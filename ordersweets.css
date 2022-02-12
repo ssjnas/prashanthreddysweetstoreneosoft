@@ -9,9 +9,12 @@ td>span{
 }
 h1{
     text-align: center;
+    margin-bottom: 20px;
 }
 form{
     background-color:whitesmoke;
+    padding:20px;
+    margin-top: 70px;
 }
 #td{
     color: white;
@@ -39,7 +42,10 @@ input{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 20px;
+    position:absolute;
+    bottom:0;
+    width:100%;
+
 }
 div *{
     color:white;
