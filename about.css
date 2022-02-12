@@ -1,0 +1,21 @@
+.image{
+    width:600px;
+}
+.about{
+    background-size: cover;
+    background-color: darkcyan;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.heading{
+    color:black;
+    font-weight: bolder;
+}
+
+.paragraph{
+    color:orange;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bolder;
+}

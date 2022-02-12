@@ -1,0 +1,56 @@
+td>span{
+    color: red;
+    font-weight: bold;
+}
+#regForm{
+    background-color:white;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+form{
+    background-color:whitesmoke;
+}
+#td{
+    color: white;
+}
+label{
+    color:green;
+}
+.sub{
+    text-align: center;
+    margin-top: 10px;
+    width:100px;
+    color:black;
+    background-color:green;
+    font-weight: bolder;
+}
+input{
+    margin-top: 5px;
+    margin-left: 10px;
+    
+}
+.container{
+    display: flex;
+    background-color:maroon;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+div *{
+    color:white;
+}
+.heading{
+    text-align: left;
+}
+p{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.form{
+    margin-top: 30px;
+}

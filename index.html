@@ -1,0 +1,61 @@
+<html>
+    <head>
+ <link rel="stylesheet" href="sweet.css">
+    </head>
+
+    <body>
+        <nav>
+        <ul>
+            <li><a href="home.html"> Home </a> </li>
+            <li><a href="about.html"> AboutUs </a>  </li>
+            <li><a href="viewsweets.html"> ViewSweets </a> </li>
+            <li><a href="ordersweets.html"> OrderSweets  </a> </li>
+        </ul>
+    </nav>
+    
+
+
+
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			var pic = $("img:first");
+			var images = [
+
+"Karachi-Halwa-500x375.jpg",
+"Kesar-Shrikhand_3.jpg",
+"Kheer.jpg",
+"Palkova-1.jpg",
+"Gulab_jamun_(Gibraltar,_November_2020).jpg",
+"download (1).jpg",
+"download (2).jpg",
+"download.jpg"
+];
+
+			var i = 0;
+			setInterval(function () {
+
+				// Returns 0, 1, 2, 3, 0, 1, 2, ....
+				i = (i + 1) % images.length;
+				pic.fadeOut(250, function () {
+					$(this).attr("src", images[i]);
+					$(this).fadeIn(1050);
+				});
+			}, 2000);
+		});
+	</script>
+</head>
+
+<body>
+	<div class="slideshow">
+		<img src=
+"GettyImages-sweets-Diwali-1200.jpg" />
+	</div>
+</body>
+
+
+
+    </body>
+</html>

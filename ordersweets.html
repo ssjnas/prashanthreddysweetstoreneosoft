@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <meta name="author" content="prashanth">
+        <meta name="Description" content="demo trail">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="ordersweets.css">
+      </head>
+<body>
+    <section id="regForm">
+
+        
+        <form class="form" action="success.html" onsubmit=" return formValidate()" >
+            <h1 >Order Form</h1>
+            <table>
+                <tr>
+                    <td><label for="fname">Enter First name:</label> </td>
+                    <td> 
+                        <input id="fname" type="text"   name="name" onblur="validate1()" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <span id="error1"></span>
+
+                    </td>
+                    </tr>
+                 
+        <td>  
+            <label for="lname">Enter Last name:</label> 
+           </td>
+           <td><input required name="name" type="text" id="lname"  onblur="validate2()"/></td>
+                </tr>
+                <tr>
+                     <td></td>
+                    <td> 
+                        <span id="error2"></span>
+                    </td>
+                <tr>
+                    <td> <label for="emailId">Enter Email adress:</label></td>
+                    <td><input  required type="email" id="emailId" onblur="validate3()"/></td>
+                </tr>
+                <tr> <td></td><td> <span id="error3"></span></td>
+                <tr>
+                    <td> <label for="mbl">Enter Mobile Number</label></td>
+                  <td><input type="tel" id="mbl"  pattern="[0-9]{10}" required onblur="validate4()"/>
+                  </td>
+                </tr>
+                <tr> <td></td><td> <span id="error4"></span></td>
+                                   </tr>
+
+                <datalist id="Sweets">
+                    <optgroup >
+                        <option value="gulab">Gulabjamun</option>
+                        <option value="rasmalaiah">Rasmalaiah</option>
+                        <option value="kheer">Kheer</option>
+                        <option value="laddu">Laddu</option>
+                        <option value="jalebi">Jalebi</option>
+                        <option value="halwa">Halwa</option>
+                        <option value="palkova">Palkova</option>
+                        <option value="imarti">Imarti</option>
+                        <option value="shirkhand">Shirkhand</option>
+                      </optgroup>
+                      
+                </datalist>
+                <tr>
+                    <td> <label for="sweetslist">Select your sweet </label></td>
+                  <td>  <input list="Sweets" id="sweetslist" required onblur="validate5()"/>
+                  </td>
+                </tr>
+                <tr> <td></td><td> <span id="error5"></span></td>
+                </tr>
+               
+                <tr>
+                    <td></td> <td>  <input class="sub"  type="submit"/> </td>
+                </tr>
+       
+            </table>
+        </form>
+        
+    </section>
+    <div class='container'>
+<div>
+    <h1 class="heading"> Madhuram Sweets</h1>
+    <p> We work from the heart, with passion to craft authentic sweets and savories <br> with an inimitable character that’s truly the taste of Royal India.</p>
+</div>
+<div>
+    <h1> We'd Be Happy TO assist You </h1>
+    <p> Gmail:prashanth.ssjna@gmail.com</p>
+    <p> MONDAY-SATURDAY</p>
+    <P> 10 AM -6 PM </P>
+    <p> 7013162089</p>
+    <p> 9963579571</p>
+</div>
+
+    </div>
+    <hr>
+   
+<script src="validation.js"></script>
+</body>
+</html>
